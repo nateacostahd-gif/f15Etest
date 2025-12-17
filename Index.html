@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS #1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- children of the body element -->
+    <div class="top green center-content">
+      <img id="cockpit" class="fullscreen" src="images/cockpit_view.png" />
+    </div>
+    <div class="bottom purple">
+      <div class="sides blue">
+        <div class="control orange center-content">
+          <img
+            src="images/flare_pod.png"
+            class="clickable1"
+            onclick="playSound3()"
+          />
+        </div>
+        <div class="control orange2 center-content">
+          <img
+            id="cuhv"
+            src="images/meric_ca.png"
+            class="clickable1"
+            onclick="playSound67()"
+          />
+        </div>
+      </div>
+
+      <div class="main yellow">
+        <div class="toprow light-grey center-content">
+          <img
+            src="images/radar_lock.png"
+            class="clickable1"
+            onclick="playSound4()"
+          />
+        </div>
+
+        <div class="bottomrow">
+          <div class="aspect white center-content">
+            <img
+              src="images/20mm_vulcan.png"
+              class="clickable1"
+              onclick="playSound1()"
+            />
+          </div>
+
+          <script src="script.js"></script>
+
+          <div class="aspect red center-content">
+            <img
+              src=""
+              id="missile"
+              class="clickable1"
+              onclick="playSound8()"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="sides blue">
+        <div class="control orange center-content">
+          <img
+            src="images/ge._ar.png"
+            class="clickable1"
+            onclick="playSound2()"
+          />
+        </div>
+        <div class="control orange2 center-content">
+          <img
+            src="images/air_brake.png"
+            class="clickable1"
+            onclick="playSound5()"
+          />
+        </div>
+      </div>
+    </div>
+    <audio src="sound/brrt_shoot.mp3" id="gun-click"></audio>
+    <audio src="sound/check_gear.mp3" id="gear-click"></audio>
+    <audio src="sound/flare_dump2.mp3" id="flare-click"></audio>
+    <audio src="sound/lock_lock3.mp3" id="lock-click"></audio>
+    <audio src="sound/air_brakeon.mp3" id="brake-click"></audio>
+    <audio src="sound/fire_missile.mp3" id="missile-click"></audio>
+    <audio src="sound/link_in.mp3" id="linkin-click"></audio>
+  </body>
+</html>
