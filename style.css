@@ -1,0 +1,117 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-color: #ffffff;
+}
+.top {
+  height: 70%;
+  width: 100%;
+  display: block;
+}
+.bottom {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+.sides {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+.main {
+  height: 100%;
+  width: 50%;
+  display: block;
+}
+.control {
+  height: 50%;
+  width: 100%;
+}
+.toprow {
+  height: 50%;
+  width: 100%;
+}
+.bottomrow {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.aspect {
+  height: 100%;
+  width: 50%;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* opaque = not able to be seen through, the default opacity for elements is 1 */
+/* transparent = totally see-through, this would be an opacity of 0 */
+.translucent {
+  opacity: 0.5;
+}
+.fullscreen {
+  height: 100%;
+  width: auto;
+}
+/* colors */
+.green {
+  background-color: #000000;
+}
+.blue {
+  background-color: #0b69c0;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #000000;
+}
+.orange {
+  background-color: #000000;
+}
+.orange2 {
+  background-color: #000000;
+}
+.white {
+  background-color: #000000;
+}
+.light-grey {
+  background-color: #000000;
+}
+.yellow {
+  background-color: #000000;
+}
+
+/* you may choose to use this class for one of the challenges */
+.gone {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+h1 {
+  font-size: 100px;
+}
+@media only screen and (max-width: 800px) {
+  .bottomrow {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+  .aspect {
+    height: 50%;
+    width: 100%;
+  }
+}
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
